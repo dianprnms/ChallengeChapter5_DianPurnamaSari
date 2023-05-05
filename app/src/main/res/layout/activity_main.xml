@@ -25,38 +25,40 @@
         android:layout_centerHorizontal="true"/>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Email"
         android:layout_marginTop="230dp">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Masukkan Email"
+            tools:ignore="SpeakableTextPresentCheck"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Password"
         tools:ignore="ExtraText"
         app:endIconMode="password_toggle"
         android:layout_marginTop="300dp">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/passwordLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Masukkan Password"
             android:inputType="textPassword"
-            />
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
-    
+
     <Button
         android:id="@+id/btnlogin"
         android:text="Login"

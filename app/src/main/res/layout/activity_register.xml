@@ -25,64 +25,68 @@
         android:layout_centerHorizontal="true"/>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usernameRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Username"
         android:layout_marginTop="230dp">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/namaLengkap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hint="Nama Lengkap"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/emailRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Email"
         android:layout_marginTop="300dp">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/emailRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hint="Email"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/passwordRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Password"
         tools:ignore="ExtraText"
         app:endIconMode="password_toggle"
         android:layout_marginTop="370dp">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/passwordRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Password"
             android:inputType="textPassword"
-            />
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Konfirmasi Password"
         tools:ignore="ExtraText"
         app:endIconMode="password_toggle"
         android:layout_marginTop="440dp">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Konfirmasi Password"
             android:inputType="textPassword"
-            />
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

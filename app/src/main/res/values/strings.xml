@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ChallengeChapter5_DianPurnamaSari</string>
+    <string name="hello_world">Home</string>
+    <string name="ganti_bahasa">Change Language</string>
+    <string name="selamat_datang">Welcome</string>
+    <string name="login">Login</string>
+    <string name="profil">Profile</string>
+
+
 </resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="hello_world">Beranda</string>
+    <string name="ganti_bahasa">Ganti Bahasa</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="login">Masuk</string>
+    <string name="profil">Profil</string>
+
+
+</resources>
