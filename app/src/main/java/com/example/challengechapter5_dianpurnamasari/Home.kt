@@ -27,7 +27,14 @@ class Home : AppCompatActivity() {
         showDataNews()
 
         binding.toProfile.setOnClickListener{
-            startActivity(Intent(this,Profile::class.java))
+            startActivity(Intent(this, Profile::class.java))
+
+//            //AMBIL DATA DARI REGISTER
+//            var dapatUserId = intent.getLongExtra("user_id", 0)
+//
+//            //KIRIM DATA KE PROFILE
+//            intent.putExtra("user_id", dapatUserId)
+//            startActivity(intent)
         }
 
         binding.home.setText(getString(R.string.hello_world))

@@ -9,6 +9,8 @@ import android.widget.Button
 import android.widget.Toast
 import com.example.challengechapter5_dianpurnamasari.databinding.ActivityHomeBinding
 import com.example.challengechapter5_dianpurnamasari.databinding.ActivityMainBinding
+import com.example.challengechapter5_dianpurnamasari.user.UserData
+import com.example.challengechapter5_dianpurnamasari.user.UserDatabase
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -64,6 +66,7 @@ class MainActivity : AppCompatActivity() {
         firebaseAuth.signInWithEmailAndPassword(email, password)
             .addOnSuccessListener {
                 startActivity(Intent(this@MainActivity, Home::class.java))
+
             }
             .addOnFailureListener {error ->
                 Toast.makeText(this, error.localizedMessage, Toast.LENGTH_SHORT).show()
