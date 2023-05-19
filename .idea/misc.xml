@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <pattern value="com.example.challengechapter5_dianpurnamasari.network.FavData" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.network.FavData" method="FavData" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.Genre" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.Genre" method="Genre" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.database.user.UserDatabase.Companion" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.databaseFilmFavorite.FavoriteDatabase.Companion" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.network.DataMovie" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.network.DataMovie" method="DataMovie" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.view.adapter.FavAdapter" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.view.adapter.FavAdapter" method="FavAdapter" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.databaseFilmFavorite.FavoriteData" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.databaseFilmFavorite.FavoriteData" method="FavoriteData" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.databaseFilmFavorite.FavoriteDatabase" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.view.Profile" method="getDataUser" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.databaseFilmFavorite.FavoriteDatabase.Companion" method="getInstance" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.database.user.UserDatabase.Companion" method="getInstance" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ProductionCompany" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ProductionCompany" method="ProductionCompany" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ProductionCompanyX" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ProductionCompanyX" method="ProductionCompanyX" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ProductionCountry" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ProductionCountry" method="ProductionCountry" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ProductionCountryX" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ProductionCountryX" method="ProductionCountryX" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.view.Profile" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ResponseData" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ResponseData" method="ResponseData" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ResponseDataDetail" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.ResponseDataDetail" method="ResponseDataDetail" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.SpokenLanguage" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.SpokenLanguage" method="SpokenLanguage" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.SpokenLanguageX" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.model.SpokenLanguageX" method="SpokenLanguageX" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.database.user.UserData" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.database.user.UserData" method="UserData" />
+    <pattern value="com.example.challengechapter5_dianpurnamasari.database.user.UserDatabase" />
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

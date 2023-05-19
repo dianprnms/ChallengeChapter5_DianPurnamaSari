@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "ChallengeChapter5_DianPurnamaSari"
-include ':app'
+include ':ChallengeChapter6_DianPurnamaSari'
