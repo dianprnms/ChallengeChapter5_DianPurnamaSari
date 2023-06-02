@@ -28,18 +28,12 @@ data class ResponseDataDetail(
     val popularity: Double,
     @SerializedName("poster_path")
     val posterPath: String,
-    @SerializedName("production_companies")
-    val productionCompanies: List<ProductionCompanyX>,
-    @SerializedName("production_countries")
-    val productionCountries: List<ProductionCountryX>,
     @SerializedName("release_date")
     val releaseDate: String,
     @SerializedName("revenue")
     val revenue: Int,
     @SerializedName("runtime")
     val runtime: Int,
-    @SerializedName("spoken_languages")
-    val spokenLanguages: List<SpokenLanguageX>,
     @SerializedName("status")
     val status: String,
     @SerializedName("tagline")

@@ -28,34 +28,35 @@ class Register : AppCompatActivity() {
         userDB = UserDatabase.getInstance(this)
 
         binding.btnRegister.setOnClickListener {
-            if(binding.namaLengkap.text.isNotEmpty() && binding.emailRegister.text.isNotEmpty() && binding.passwordRegister.text.isNotEmpty() && binding.password.text.isNotEmpty()){
-                if(binding.passwordRegister.text.toString() == binding.password.text.toString()){
-                    //LAUNCH REGISTER
-                    processRegister()
-
-                    var id : Long? = 0
-
-                    runBlocking {
-                        //MASUK DATABASE
-                        val addDataJob = GlobalScope.async{
-                            return@async addData()
-                        }
-                        id = addDataJob.await()
-
-                    }
-                    //MENGIRIM DATA
-                    val intent = Intent(this, Home::class.java)
-                    intent.putExtra("user_id", id)
-                    startActivity(intent)
-
-                }else{
-                    Toast.makeText(this@Register, "Konfirmasi password harus sama",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
-            }else{
-                Toast.makeText(this@Register, "Silahkan isi semua data", Toast.LENGTH_SHORT).show()
-            }
+            mencariRegister(binding.namaLengkap.text.toString(), binding.emailRegister.text.toString(), binding.passwordRegister.text.toString(), binding.password.text.toString() )
+//            if(binding.namaLengkap.text.isNotEmpty() && binding.emailRegister.text.isNotEmpty() && binding.passwordRegister.text.isNotEmpty() && binding.password.text.isNotEmpty()){
+//                if(binding.passwordRegister.text.toString() == binding.password.text.toString()){
+//                    //LAUNCH REGISTER
+//                    processRegister()
+//
+//                    var id : Long? = 0
+//
+//                    runBlocking {
+//                        //MASUK DATABASE
+//                        val addDataJob = GlobalScope.async{
+//                            return@async addData()
+//                        }
+//                        id = addDataJob.await()
+//
+//                    }
+//                    //MENGIRIM DATA
+//                    val intent = Intent(this, Profile::class.java)
+//                    intent.putExtra("user_id", id)
+//                    startActivity(intent)
+//
+//                }else{
+//                    Toast.makeText(this@Register, "Konfirmasi password harus sama",
+//                        Toast.LENGTH_SHORT
+//                    ).show()
+//                }
+//            }else{
+//                Toast.makeText(this@Register, "Silahkan isi semua data", Toast.LENGTH_SHORT).show()
+//            }
         }
     }
 
@@ -73,7 +74,7 @@ class Register : AppCompatActivity() {
                     val user = task.result.user
                     user!!.updateProfile(userUpdateProfile)
                         .addOnCompleteListener {
-                            //startActivity(Intent(this@Register, Profile::class.java))
+                            //startActivity(Intent(this@Register, Home::class.java))
                         }
                         .addOnFailureListener { error2 ->
                             Toast.makeText(this@Register, error2.localizedMessage,
@@ -94,6 +95,37 @@ class Register : AppCompatActivity() {
 //        var email = binding.emailRegister.text.toString()
         val namaLengkap = binding.namaLengkap.text.toString()
         return userDB?.userDao()?.insertData(UserData(0, username, namaLengkap))
+    }
+
+    fun mencariRegister(nama: String, email: String, password: String, konfirmasiPassword: String){
+        if(nama.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty() && konfirmasiPassword.isNotEmpty()){
+            if(password == konfirmasiPassword){
+                //LAUNCH REGISTER
+                processRegister()
+
+                var id : Long? = 0
+
+                runBlocking {
+                    //MASUK DATABASE
+                    val addDataJob = GlobalScope.async{
+                        return@async addData()
+                    }
+                    id = addDataJob.await()
+
+                }
+                //MENGIRIM DATA
+                val intent = Intent(this, Profile::class.java)
+                intent.putExtra("user_id", id)
+                startActivity(intent)
+
+            }else{
+                Toast.makeText(this@Register, "Konfirmasi password harus sama",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }else{
+            Toast.makeText(this@Register, "Silahkan isi semua data", Toast.LENGTH_SHORT).show()
+        }
     }
 }
 

@@ -9,14 +9,13 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
-
 @Module
 @InstallIn(SingletonComponent::class)
 object RetrofitClient {
     private const val  BASE_URL ="https://api.themoviedb.org/3/"
 
     private val logging : HttpLoggingInterceptor
-       get() {
+       get(){
             val httpLoggingInterceptor = HttpLoggingInterceptor()
             return httpLoggingInterceptor.apply {
                  httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY

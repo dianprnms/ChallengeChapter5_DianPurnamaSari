@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:488494713388:android:664bda6d9fa9006fca5f89",
         "android_client_info": {
-          "package_name": "com.example.challengechapter5_dianpurnamasari"
+          "package_name": "com.example.challengechapter5_dianpurnamasari.movieb"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "488494713388-ptuckmrikhkc721uo1r1i8f5rpbbqi7e.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.challengechapter5_dianpurnamasari",
+            "package_name": "com.example.challengechapter5_dianpurnamasari.movieb",
             "certificate_hash": "1f7e9e2e9f074e5be976359156c591b6ef3ab276"
           }
         },

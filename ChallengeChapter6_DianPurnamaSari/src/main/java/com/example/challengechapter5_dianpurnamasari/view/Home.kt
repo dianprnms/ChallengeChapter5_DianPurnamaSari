@@ -25,18 +25,17 @@ class Home : AppCompatActivity() {
         setContentView(binding.root)
         showDataNews()
 
-
         binding.toProfile.setOnClickListener{
             startActivity(Intent(this, Profile::class.java))
 
-            //AMBIL DATA DARI REGISTER
-            var dapatUserId = intent.getLongExtra("user_id", 0)
-
-            //MENGIRIM DATA
-                    val id : Long = 0
-                    val intent = Intent(this, Profile::class.java)
-                    intent.putExtra("user_id", id)
-                    startActivity(intent)
+//            //AMBIL DATA DARI REGISTER
+//            var dapatUserId = intent.getLongExtra("user_id", 0)
+//
+//            //MENGIRIM DATA
+//                    val id : Long = 0
+//                    val intent = Intent(this, Profile::class.java)
+//                    intent.putExtra("user_id", id)
+//                    startActivity(intent)
         }
 
         binding.toFavorite.setOnClickListener {

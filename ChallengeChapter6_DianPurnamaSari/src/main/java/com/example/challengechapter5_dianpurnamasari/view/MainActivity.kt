@@ -15,9 +15,9 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityMainBinding
-    private lateinit var progressDialog : ProgressDialog
-    private var firebaseAuth = FirebaseAuth.getInstance()
+     lateinit var binding : ActivityMainBinding
+     lateinit var progressDialog : ProgressDialog
+     var firebaseAuth = FirebaseAuth.getInstance()
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun prosesLogin(){
+    fun prosesLogin(){
         val email = binding.email.text.toString()
         val password = binding.passwordLogin.text.toString()
 

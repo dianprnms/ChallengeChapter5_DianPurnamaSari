@@ -53,8 +53,13 @@ class Profile : AppCompatActivity() {
             update()
         }
 
+        binding.toHome.setOnClickListener{
+            startActivity(Intent(this, Home::class.java))
+        }
+
         binding.btnLogout.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
     }
 
